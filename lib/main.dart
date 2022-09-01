@@ -31,7 +31,7 @@ class _MyAppState extends State<MyApp> {
                   Column(children: [
                     Image.network(_response!.iconUrl),
                     Text(
-                      ' ${_response!.tempInfo.temperature}°C',
+                      ' ${_response!.tempInfo.temperature.toStringAsFixed(0)}°C',
                       style: TextStyle(fontSize: 45),
                     ),
                     Text(
